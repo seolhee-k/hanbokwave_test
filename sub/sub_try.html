@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANBOK WAVE</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Noto+Sans+KR:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/2.sub_try_style.css">
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/motion.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!--header-->
+        <div id="header_wrap">
+            <div id="header">
+                <div class="header_left">
+                    <button id="gnb_open" type="button" class="gnb_btn">
+                        <span class="burger">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                        </span>
+                        <span class="txt">menu</span>
+                    </button>
+                    <!--모바일버튼-->
+                    <button id="mobile_open" type="button" class="gnb_btn">
+                        <span class="burger">
+                            <span class="top"></span>
+                            <span class="bottom"></span>
+                        </span>
+                        <span class="txt">menu</span>
+                    </button>
+                </div>
+                <div class="header_center">
+                    <ul class="header_lnb_left">
+                        <li><a href="sub_about.html">ABOUT</a></li>
+                        <li><a href="sub_try.html">TRY</a></li>
+                    </ul>
+                    <div class="header_center_logo">
+                        <a href="../index.html"><img src="../images/sub_notice/logo(b).png" alt="상단 로고"></a>
+                    </div>menu_bg
+                    <ul class="header_center_lnb_right">
+                        <li><a href="sub_shop.html">SHOP</a></li>
+                        <li><a href="sub_news.html">NEWS</a></li>
+                    </ul>
+                </div>
+                <div class="header_right">
+                    <ul class="header_sub_menu">
+                        <li class="search">
+                            <button type="button" class="search_btn"><img src="../images/main/icon_search(b).png"
+                                    alt="검색" width="22"></button>
+                        </li>
+                        <li class="mypage"><a href="#">LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--menu_bar_pc-->
+        <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="sidebar_logo">
+                <a href="../index.html">
+                    <img src="../images/main/logo(b).png" alt="로고">
+                </a>
+            </div>
+            <div class="menu_wrap">
+                <ul class="gnb menu">
+                    <li class="on">
+                        <a href="javascript:return false;">About <span class="icon_plus">icon</span> </a>
+                        <ul class="submenu">
+                            <li><a href="sub_about.html#sub_sec1_title">mission</a></li>
+                            <li><a href="sub_about.html#sub_sec2_title">행사개요</a></li>
+                            <li><a href="sub_about.html#sub_sec3_title">행사일정</a></li>
+                            <li><a href="sub_about.html#sub_sec4_title">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_try.html">try<span class="icon_plus">icon</span></a>
+                        <ul class="submenu">
+                            <li><a href="sub_try.html#sub_sec1">공연</a></li>
+                            <li><a href="sub_try.html#sub_sec2">전시</a></li>
+                            <li><a href="sub_try.html#sub_sec3">체험</a></li>
+                            <li><a href="sub_try.html#sub_sec4">강연</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_shop.html">shop<span class="icon_plus">icon</span></a>
+                        <ul class="submenu">
+                            <li><a href="sub_shop.html#Board01">all</a></li>
+                            <li><a href="sub_shop.html#Board02">clothes</a></li>
+                            <li><a href="sub_shop.html#Board03">living</a></li>
+                            <li><a href="sub_shop.html#Board04">accessory</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_news.html">news<span class="icon_plus">icon</span></a>
+                        <ul class="submenu">
+                            <li><a href="sub_news.html#Board01">공지사항</a></li>
+                            <li><a href="sub_news.html#Board02">미디어</a></li>
+                            <li><a href="sub_news.html#Board03">event</a></li>
+                            <li><a href="sub_news.html#Board04">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="close_btn">
+                <a href="javascript:return false;">
+                    <img src="../images/main/icon_close_btn.png">
+                </a>
+            </div>
+        </div>
+        <!--top_menu-->
+        <div id="top_menu_wrap">
+            <div class="top_menu">
+                <h2 class="ga_txt sub_title">try</h2>
+                <ul>
+                    <li><a href="#sub_sec1">공연</a></li>
+                    <li><a href="#sub_sec2">전시</a></li>
+                    <li><a href="#sub_sec3">체험</a></li>
+                    <li><a href="#sub_sec4">강연</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="sub_sec1">
+                <div class="column_left column_all">
+                    <img src="../images/main/column_right.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_left.png" alt="기둥하단">
+                </div>
+                <div class="column_right column_all">
+                    <img src="../images/main/column_left.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_right.png" alt="기둥하단">
+                </div>
+                <div class="Performance">
+                    <ul>
+                        <li class="opening">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event1.png" alt="개막식">
+                                <div class="opening p_text">
+                                    <h3>개막식</h3>
+                                </div>
+                            </a>
+                            <span>3.31.(금) 18:00/ 광화문광장</span>
+                        </li>
+                        <li class="perade1">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event3.1.png" alt="정조의화성행차">
+                                <div class="perade1 p_text">
+                                    <h3>정조의 화성행차 재현</h3>
+                                    <p>'출궁 의식'</p>
+                                </div>
+                            </a>
+                            <span>4.1.(토) 14:00 ~ 14:20/ 창덕궁 돈화문 앞 광장</span>
+                        </li>
+                        <li class="contest">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event4.png" alt="한복뽐내기대회">
+                                <div class="contest p_text">
+                                    <h3>한복 뽐내기 대회</h3>
+                                </div>
+                            </a>
+                            <span>4.1.(토) 16:00/ 광화문광장</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="fassionshow">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event2.png" alt="한복패션쇼">
+                                <div class="fassionshow p_text">
+                                    <h3>한복 패션쇼</h3>
+                                    <p>'입고 십은 우리 옷, 한복'</p>
+                                </div>
+                            </a>
+                            <span>3.31.(금) 19:00/ 광화문광장</span>
+                        </li>
+                        <li class="perade2">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event3.2.png" alt="정조의화성행차">
+                                <div class="perade2 p_text">
+                                    <h3>정조의 화성행차 재현</h3>
+                                    <p>'정조의 효심과 애민의 상황극'</p>
+                                </div>
+                            </a>
+                            <span>4.1.(토) 15:00 ~ 15:20/ 광화문광장 북측</span>
+                        </li>
+                        <li class="concert">
+                            <a href="javascript:return false">
+                                <img src="../images/sub_try/try_event5.jpg" alt="폐막식">
+                                <div class="concert p_text">
+                                    <h3>K-Pop공연</h3>
+                                </div>
+                            </a>
+                            <span>4.2.(일) 19:00 / 광화문광장</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h1>공연 Performances</h1>
+                    <div class="text_box">
+                        <p>봄의 꽃들이 뿜어내는 향기에 취해
+                            <br>한복 자락의 휘날리며 한복의 멋과 미에 빠져보세요!
+                            <br>다채로운 행사가 여러분을 기다리고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="sub_sec2">
+                <div class="column_left column_all">
+                    <img src="../images/main/column_right.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_left.png" alt="기둥하단">
+                </div>
+                <div class="column_right column_all">
+                    <img src="../images/main/column_left.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_right.png" alt="기둥하단">
+                </div>
+                <div class="sec2_content">
+                    <ul class="list">
+                        <li>
+                            <div class="info">
+                                <h1>전시 Exhibitions</h1>
+                            </div>
+                            <div class="sub_sec2_info">
+                                <p>* 장소 : 세종문화회관 미술관 </p>
+                                <p>* 기간 : 3.31.(금) ~ 4.30.(일)</p>
+                                <p>* 시간 : 오전 10시 30분 ~ 오후 19시</p>
+                                <span>(입장마감 오후 6시30분)</span>
+                            </div>
+                        </li>
+                        <li class="Exhibition">
+                            <div class="list_image list_image--half ">
+                                <figure class="js-image">
+                                    <picture>
+                                        <img src="../images/sub_try/display1.png" alt="전시1">
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="list_text">
+                                <p class="list_place">● 미술관 1관</p>
+                                <h3 class="list_title">신윤복 x 김홍도 ALIVE展</h3>
+                                <p class="list_cont">우리나라 회화를 대표하는 장르 중 하나인 풍속화를 대표하는 단원 김홍도와 혜원 신윤복의 작품을 미디어 아트로 만나볼 수
+                                    있는 기회!</p>
+                            </div>
+                        </li>
+                        <li class="event">
+                            <div class="list_image list_image--half ">
+                                <figure class="js-image">
+                                    <picture>
+                                        <img src="../images/sub_try/display2.png" alt="전시2">
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="list_text">
+                                <p class="list_place">● 미술관 2관</p>
+                                <h3 class="list_title">K-콘텐츠 한복 전시</h3>
+                                <p class="list_cont">전세계가 빠진 K-컨텐츠의 주역, 넷플릭스의 킹덤과 애플TV 파친코 속 한복을 만나 보세요. 배우들이 실제 착용한 의상과
+                                    함께 시대별 한복의 변화도 느끼실 수 있답니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="sub_sec3">
+                <div class="column_left column_all">
+                    <img src="../images/main/column_right.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_left.png" alt="기둥하단">
+                </div>
+                <div class="column_right column_all">
+                    <img src="../images/main/column_left.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_right.png" alt="기둥하단">
+                </div>
+                <div class="info">
+                    <h1>체험 Experience</h1>
+                    <div class="text_box">
+                        <p>* 풍속도 그리기, 꽃신 만들기 프로그램은 사전예약을 받고 있습니다. </p>
+                        <p>* 사전 예약 프로그램은 수량 소진, 접수 마감으로 인해 조기 종료 될 수 있습니다.</p>
+                        <p>* 다양한 현장 이벤트도 운영 중이니, 광화문 광장에서 만나요!</p>
+                    </div>
+                </div>
+                <div class="book_btn">
+                    <a href="javascript:return false;">
+                        <p>예약하기</p>
+                    </a>
+                </div>
+                <div class="experience">
+                    <ul>
+                        <li class="drawing">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/drawing.png" alt="풍속도그리기">
+                                <div class="drawing p_text">
+                                    <h3>풍속도 그리기</h3>
+                                    <p>운영일시 : 12:30/14:00/15:30/17:00</p>
+                                    <p>운영방법 : 사전예약</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="knotting">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/knotting.png" alt="옷고름매기">
+                                <div class="knotting p_text">
+                                    <h3>옷고름 매기</h3>
+                                    <p>운영일시 : 상시운영</p>
+                                    <p>운영방법 : 자율체험</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="making">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/making.png" alt="꽃신만들기">
+                                <div class="making p_text">
+                                    <h3>꽃신 만들기</h3>
+                                    <p>운영일시 : 13:00/14:30/16:00/17:30</p>
+                                    <p>운영방법 : 사전예약</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wearing">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/wearing.png" alt="한복체험">
+                                <div class="wearing p_text">
+                                    <h3>한복 체험</h3>
+                                    <p>운영일시 : 상시운영</p>
+                                    <p>운영방법 : 현장등록</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="palace_tour">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/palace_tour.png" alt="궁궐투어">
+                                <div class="palace_tour p_text">
+                                    <h3>궁궐투어</h3>
+                                    <p>운영일시 : 상시운영</p>
+                                    <p>운영방법 : 자율체험</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hanok_tour">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/hanok_tour.png" alt="한옥마을투어">
+                                <div class="hanok_tour p_text">
+                                    <h3>한옥마을투어</h3>
+                                    <p>운영일시 : 상시운영</p>
+                                    <p>운영방법 : 자율체험</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hanbok_styling">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/hanbok_styling.png" alt="한복스타일링">
+                                <div class="hanbok_styling p_text">
+                                    <h3>한복 스타일링</h3>
+                                    <p>운영일시 : 13:00/14:30/16:00/17:30</p>
+                                    <p>운영방법 : 사전예약</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="lovetest">
+                            <a href="javascript:return false;">
+                                <img src="../images/sub_try/lovetest.png" alt="연애테스트">
+                                <div class="lovetest p_text">
+                                    <h3>연인 궁합 테스트</h3>
+                                    <p>운영일시 : 상시운영</p>
+                                    <p>운영방법 : 현장등록</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="sub_sec4">
+                <div class="column_left column_all">
+                    <img src="../images/main/column_right.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_left.png" alt="기둥하단">
+                </div>
+                <div class="column_right column_all">
+                    <img src="../images/main/column_left.png" alt="기둥상단">
+                    <img class="rotate" src="../images/main/column_right.png" alt="기둥하단">
+                </div>
+                <div class="info">
+                    <h1>강연 Lectures</h1>
+                    <div class="text_box">
+                        <p>* 수용가능 인원으로 인해 사전예약으로 진행됩니다. </p>
+                        <p>* 현장 접수는 사전 예약을 우선으로 진행됨에 따라 조기 마감될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="book_btn">
+                    <a href="javascript:return false;">
+                        <p>예약하기</p>
+                    </a>
+                </div>
+                <table class="table_fill">
+                    <tr>
+                        <th class="text_center">4.1.(토)
+                            <br> 10:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/1.speaker.png" alt="조경숙">
+                        </td>
+                        <td>
+                            <strong>100년 전, 우리한복& 체험 <금박주머니 만들기></strong>
+                                <br>서울시 무형문화재 제11호 침선장 이수자/ 조경숙
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text_center">4.1.(토)
+                            <br> 13:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/2.speaker.png" alt="임영주">
+                        </td>
+                        <td>
+                             <strong>우리나라 직물무늬 상징과 아름다움</strong> 
+                            <br>한-명품공예미술관 관장/ 임영주
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text_center">4.1.(토)
+                            <br> 15:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/3.speaker.png" alt="백남주">
+                        </td>
+                        <td>
+                            <strong>한복이 있는 옛 그림 이야기 – 신윤복, 김홍도 중심으로</strong> 
+                            <br>큐레이터/ 백남주
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text_center">4.2.(일)
+                            <br> 10:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/4.speaker.png" alt="유수정">
+                        </td>
+                        <td>
+                            <strong>역사 드라마 의상 제작의 실제</strong> 
+                            <br>KBS 아트비전 의상제작부 부장/ 유수정
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text_center">4.2.(일)
+                            <br> 13:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/5.speaker.png" alt="김도래">
+                        </td>
+                        <td>
+                            <strong>단청을 만나다</strong> 
+                            <br>북촌불교미술보존연구소 대표, 문화재수리기술자/ 김도래
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text_center">4.2.(일)
+                            <br> 15:00
+                        </th>
+                        <td class="text_center">
+                            <img src="../images/sub_try/6.speake.png" alt="이태호">
+                        </td>
+                        <td>
+                           <strong>풍속화로 보는 조상들의 삶과 풍류: 풍속화가 가지는 인문학적 의미</strong>  
+                            <br>명지대학교 미술사학과 교수/ 이태호
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--pc footer-->
+        <div id="footer_wrap" class="column">
+            <div class="column_left column_all">
+                <img src="../images/main/column_right.png" alt="기둥상단">
+                <img class="rotate" src="../images/main/column_left.png" alt="기둥하단">
+            </div>
+            <div class="column_right column_all">
+                <img src="../images/main/column_left.png" alt="기둥상단">
+                <img class="rotate" src="../images/main/column_right.png" alt="기둥하단">
+            </div>
+            <div class="footer_deco">
+                <div class="deco1">
+                    <div class="deco2">
+                        <div class="deco3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="foot_cont">
+                    <ul class="footer_lnb">
+                        <li><a href="sub_about.html">About</a></li>
+                        <li><a href="sub_try.html">try</a></li>
+                        <li><a href="sub_shop.html">shop</a></li>
+                        <li><a href="sub_news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="foot_cont">
+                    <div class="foot_logo">
+                        <a href="../index.html"><img src="../images/main/logo(b).png" alt="하단로고"></a>
+                    </div>
+                    <div class="foot_info">
+                        <div class="foot_info_list">
+                            <dl>
+                                <dt>주소 :</dt>
+                                <dd>서울특별시 종로구 세종대로 172 (우)03154</dd>
+                            </dl>
+                        </div>
+                        <div class="foot_info_list">
+                            <dl>
+                                <dt>TEL :</dt>
+                                <dd>(02)1234-5678</dd>
+                            </dl>
+                            <dl>
+                                <dt>FAX :</dt>
+                                <dd>(02)5678-1234</dd>
+                            </dl>
+                        </div>
+                        <p class="copyright"> <span>COPYRIGHT 2023 @HANBOK WAVE</span> <span>ALL RIGHTS RESERVED</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="foot_cont">
+                    <ul class="footer_lnb">
+                        <li><a href="javascript:return false;">login</a></li>
+                        <li><a href="sub_news.html#Board04">faq</a></li>
+                        <li><a href="javascript:return false;">agreement</a></li>
+                        <li><a href="javascript:return false;"> <span>privacy</span> <span> policy</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--btn_top-->
+        <div class="btn_top">
+            <a href="sub_about.html#header_wrap">
+                <img src="../images/main/btn_top.png" alt="상단으로이동">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
