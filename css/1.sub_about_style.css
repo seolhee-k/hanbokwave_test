@@ -457,7 +457,7 @@ button {
     margin: -4px 16px 0;
 }
 
-.sub_sec1 .img_box {
+.sub_sec1_cont .img_box {
     background-image: url(../images/sub_notice/notice_sec1_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -466,7 +466,7 @@ button {
     opacity: 0.9;
 }
 
-.sub_set1 .text_box{
+.sub_sec1_cont .text_box{
     position:absolute;
     top:55% ;
     left: 50%;
