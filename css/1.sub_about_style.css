@@ -399,6 +399,7 @@ button {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 10;
 }
 
 .column_right {
@@ -424,6 +425,7 @@ button {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 10;
 }
 
 #sub_sec1_title p,
