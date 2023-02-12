@@ -460,12 +460,21 @@ button {
 }
 
 .sub_sec1_cont .img_box {
+    height: 735px;
     background-image: url(../images/sub_notice/notice_sec1_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 735px;
+    background-size: cover;
     opacity: 0.9;
+    animation: ani 15s infinite;
+}
+
+@keyframes ani{
+    0%{background-image: url(../images/sub_notice/notice_sec1_bg.jpg);}
+    25%{background-image: url(../images/sub_notice/notice_sec1.2_bg.jpg);}
+    50%{background-image: url(../images/sub_notice/notice_sec1.3_bg.jpg);}
+    75%{background-image: url(../images/sub_notice/notice_sec1.4_bg.jpg);}
+    100%{background-image: url(../images/sub_notice/notice_sec1.7_bg.png);}
 }
 
 .sub_sec1_cont .text_box{
